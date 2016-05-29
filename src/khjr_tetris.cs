@@ -546,7 +546,7 @@ public class khjr_tetris : MonoBehaviour
 		this.cur.pos_y = new_y;
 
 
-		if(desired_rot != new_rot)
+		if(desired_rot != new_rot && !next)
 		{
 			if(!collide(this.cur, desired_rot, this.cur.pos_x, this.cur.pos_y))
 			{
